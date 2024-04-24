@@ -22,7 +22,8 @@ function checkGuess() {
     }
    }
   
-
+  // inputElement.value retrieves the value as a string, 
+  // while randomNumber is a number. So, parse guess to an integer using parseInt() for comparison.
   let guess = parseInt(inputElement.value);
 
   if(guess === randomNumber) {
@@ -41,7 +42,17 @@ function checkGuess() {
       feedbackElement.style.color = "orange";
   }
 
+  // This line sets the animation CSS property of the feedbackElement to 'none', 
+  // effectively disabling any animation that might be currently applied to the element. 
+  // Setting it to 'none' removes the animation completely, causing the element to instantly jump to its end state.
     feedbackElement.style.animation = 'none';
+
+  // setTimeout() is used to delay the execution of a piece of code. 
+  // After a specified time delay (in this case, 10 milliseconds), 
+  // the callback function will be executed. In this callback function, 
+  // feedbackElement.style.animation is set to an empty string, effectively removing the inline animation style. 
+  // This triggers the browser to recompute the element's styles, thus resetting the animation to its initial state.
+  // It's often used to trigger CSS animations to replay when an event occurs, such as when the content of the element changes.
     setTimeout(() => {
     feedbackElement.style.animation = '';
     }, 10); // Reset animation after 10 milliseconds
