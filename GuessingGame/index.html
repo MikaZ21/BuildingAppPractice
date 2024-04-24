@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guessing Game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +15,7 @@
   <div class="container">
     <h1>Guessing Game</h1>
     <!-- Rule of the game. -->
-    <p>Guess a number between 1 and 100</p>
+    <p class="rule">Rule: Guess a number between 1 and 100</p>
     <p id="attempts">You have 10 time(s) left to guess!</p>
     <input type="number" id="guess">
     <button onclick="checkGuess()">Submit your guess</button>

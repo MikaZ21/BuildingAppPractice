@@ -5,6 +5,7 @@ function checkGuess() {
   let inputElement = document.getElementById("guess");
   let feedbackElement = document.getElementById("feedback");
   let attemptsElement  = document.getElementById("attempts");
+  let button = document.querySelector('button');
 
   if( attempts > 0) {
     attempts -= 1;
@@ -12,6 +13,9 @@ function checkGuess() {
 
     if (attempts === 0) {
         inputElement.disabled = true;
+        button.textContent = "Restart";
+        button.style.backgroundColor = "salmon";
+        button.onclick = resetGame;
         feedbackElement.textContent = `Game over! You have used all your attempts. The correct number is, "${randomNumber}"`;
         feedbackElement.style.color = "red";
         return; // Exit the function early as the game is over.
@@ -25,6 +29,9 @@ function checkGuess() {
       feedbackElement.textContent = "You guessed the number correctly!";
       feedbackElement.style.color = "green";
       inputElement.disabled = true; // Disable input after correct guess
+      button.textContent = "Restart";
+      button.style.backgroundColor = "salmon";
+      button.onclick = resetGame;
 
   } else if (guess < randomNumber) {
       feedbackElement.textContent = "Too low! Try again.";
@@ -33,7 +40,17 @@ function checkGuess() {
       feedbackElement.textContent = "Too High! Try again.";
       feedbackElement.style.color = "orange";
   }
+
+    feedbackElement.style.animation = 'none';
+    setTimeout(() => {
+    feedbackElement.style.animation = '';
+    }, 10); // Reset animation after 10 milliseconds
 }
+
+    function resetGame() {
+    window.location.reload(); // Reload the page to reset the game
+}
+
 
 // let randomNumber = Math.floor(Math.random() * 100) + 1;
 // let attempts = 10;
