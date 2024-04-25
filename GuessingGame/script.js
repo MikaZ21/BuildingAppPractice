@@ -16,7 +16,7 @@ function checkGuess() {
         button.textContent = "Restart";
         button.style.backgroundColor = "salmon";
         button.onclick = resetGame;
-        feedbackElement.textContent = `Game over! You have used all your attempts. The correct number is, "${randomNumber}"`;
+        feedbackElement.textContent = `Game over! You have used all your attempts. The correct number was, "${randomNumber}"`;
         feedbackElement.style.color = "red";
         return; // Exit the function early as the game is over.
     }
