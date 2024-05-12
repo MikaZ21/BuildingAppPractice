@@ -1,0 +1,25 @@
+body {
+    background-color: darksalmon;
+    color: white;
+}
+
+#salesReport {
+    font-family:monospace;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+tr,
+th,
+td {
+    border: 5px solid white;
+    padding: 10px;
+}
