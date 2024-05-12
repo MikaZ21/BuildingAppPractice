@@ -1,6 +1,7 @@
 # Flower Shop Sales Report 💐
 
-## 📝 Task: Displaying sales data for the first week for the shop opening. Use JavaScript array methods to analyze a newly opened flower shop's sales data 📈  
+## 📝 Task: Displaying sales data for the first week for the shop opening. 
+## Use JavaScript array methods to analyze a newly opened flower shop's sales data 📈  
 
 ### Key Features:
 • Sales Reporting: View total sales, average daily sales, and sales breakdown by day of the week.
