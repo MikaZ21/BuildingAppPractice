@@ -1,25 +1,51 @@
 body {
-    background-color: darksalmon;
+    background-color: rgb(241, 128, 89);
     color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 #salesReport {
-    font-family:monospace;
+    font-family: Academy Engraved LET;
+    max-width: 800px;
 }
 
 h1 {
     font-size: 2.5em;
-    margin-top: 20%;
+    margin-top: 10px;
+    color: rgb(255, 240, 227);
 }
 
 table {
     border-collapse: collapse;
-    font-size: 1em;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 10px;
 }
 
 tr,
 th,
 td {
-    border: 5px solid white;
-    padding: 10px;
+    border: 5px solid rgb(255, 193, 168);
+    padding: 5px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+th,
+#salesTable tr:first-child td {
+    color: rgb(112, 83, 10);
+}
+
+td {
+    color: rgb(255, 240, 227);
+}
+
+table td.currency {
+    padding-left: 5px;
 }
