@@ -1,15 +1,3 @@
-• Any long text within the '#text' element will wrap, break words that are too long to fit, ensure it doesn't exceed container width.
-The 'word-wrap: break-word;' property ensures compatibility with older browsers that might not support 'overflow-wrap'.
-
-• Choose and change the size of the font. Used a dropdown menu for the use to input their desired font size.
-
-• Reset the color picker and input fields when the "remove format" button is clicked.
-
-• Reset button that removes formatting also clears the text content in the '#text' element.
-
-• The placeholder text disappear when the user starts typing, and their input text color change to black. If the textarea is left empty, the placeholder text should reappear with its gray color.
-
-
 # Text Editor 🔤
 
 ## 📝 Task: Create text editor that allows user to write and format text. It has a various features to customize the appearance and formatting of the text content.
@@ -33,16 +21,11 @@ Click the "Remove Format" button to reset all formatting (color, background, fon
 * Reset text area:
 Click the "Reset" button to clear the text area and remove all formatting.
 
-<img src="" width="50%" height="50%">
+<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/b81a2e27-8971-4864-9324-c59c98a57ffc" width="50%" height="50%">
+<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/128102ac-54ea-450b-a08f-330d16b70be1" width="50%" height="50%">
+<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/419e7eee-7cb4-4c76-aace-906a82a6bdcb" width="50%" height="50%">
 
 ### Note:
-* If you start typing in the text area while it displays the placeholder text, the placeholder text will be cleared, and the text color will change to black.
-* If you remove all text from the text area and blur (click outside) the text area, the placeholder text will reappear, and the text color will change back to gray.
-
-<img src="" width="50%" height="50%">
-
-### 
-<img src="" width="50%" height="50%">
-
-###  
-<img src="" width="50%" height="50%">
+* The placeholder text disappear when starts typing, and input text color change to black. If the textarea is left empty or blur (click outside) the textarea, the placeholder will reappear with its gray color.
+*  Any long text within the '#text' element will wrap, break words that are too long to fit, ensure it doesn't exceed container width.
+The 'word-wrap: break-word;' property ensures compatibility with older browsers that might not support 'overflow-wrap'.
