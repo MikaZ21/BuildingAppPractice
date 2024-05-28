@@ -7,48 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Text Editor</h1>
-    <div>
-    <textarea id="text" style="height: 100px; width: 250px;"
-        placeholder="Write your text here">
-    </textarea>
-    <div>
-        <input type="color" id="colorPicker">
-        <span>/</span>
-        <input type="colorText" id="colorText" placeholder="Pick or enter color">
-        <button onclick="setColor()">Set Text Color</button>
-    </div>
-    <div>
-        <input type="color" id="bgColorPicker">
-        <span>/</span>
-        <input type="bgColorText" id="bgColorText" placeholder="Pick or enter color">
-        <button onclick="setBgColor()">Set Background Color</button>
-    </div>
+    <div class="container">
+        <h1>Text Editor</h1>
+        <div>
+            <textarea id="text" style="height: 200px; width: 450px; border: 1px solid black;"
+                placeholder="Write your text here">
+            </textarea>
+        </div>
 
-    <div>
-        <select id="fontSizeSelector">
-            <option value="12px">12px</option>
-            <option value="14px">14px</option>
-            <option value="16px">16px</option>
-            <option value="18px">18px</option>
-            <option value="20px">20px</option>
-            <option value="24px">24px</option>
-        </select>
-        <button onclick="setTextSize()">Set Text Size</button>
-    </div>
+        <div class="editTools">
+            <div class="editItem">
+                <div>
+                    <input type="color" id="colorPicker">
+                    <span>/</span>
+                    <input type="colorText" id="colorText" placeholder="Pick or enter color">
+                </div>
+                <button onclick="setColor()">Set Text Color</button>
+            </div>
 
-    <div>
-        <button onclick="toggleBold()">Bold</button>
-        <button onclick="toggleUnderline()">Underline</button>
-        <button onclick="alignText('left')">Align Left</button>
-        <button onclick="alignText('center')">Align Center</button>
-        <button onclick="alignText('right')">Align Right</button>
-        <button onclick="alignText('justify')">Justify</button>
+            <div class="editItem">
+                <div>
+                    <input type="color" id="bgColorPicker">
+                    <span>/</span>
+                    <input type="bgColorText" id="bgColorText" placeholder="Pick or enter color">
+                </div>
+                <button onclick="setBgColor()">Set Background Color</button>
+            </div>
+
+            <div class="editItem">
+                <div>
+                    <select id="fontSizeSelector">
+                        <option value="12px">12px</option>
+                        <option value="14px">14px</option>
+                        <option value="16px">16px</option>
+                        <option value="18px">18px</option>
+                        <option value="20px">20px</option>
+                        <option value="24px">24px</option>
+                    </select>
+                </div>
+                <button onclick="setTextSize()">Set Text Size</button>
+            </div>
+        </div>
+
+        <div>
+            <button onclick="toggleBold()">Bold</button>
+            <button onclick="toggleUnderline()">Underline</button>
+            <button onclick="alignText('left')">Align Left</button>
+            <button onclick="alignText('center')">Align Center</button>
+            <button onclick="alignText('right')">Align Right</button>
+            <button onclick="alignText('justify')">Justify</button>
+        </div>
+        <div>   
+            <button onclick="removeFormat()" class="removeFormat">Remove Format</button>
+            <button onclick="resetText()" class="resetText">Reset</button>
+        </div>
         
-        <button onclick="removeFormat()">Remove Format</button>
-        <button onclick="resetText()">Reset</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
