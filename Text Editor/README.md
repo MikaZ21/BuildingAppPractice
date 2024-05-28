@@ -21,9 +21,9 @@ Click the "Remove Format" button to reset all formatting (color, background, fon
 * Reset text area:
 Click the "Reset" button to clear the text area and remove all formatting.
 
-<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/b81a2e27-8971-4864-9324-c59c98a57ffc" width="50%" height="50%">
-<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/128102ac-54ea-450b-a08f-330d16b70be1" width="50%" height="50%">
-<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/419e7eee-7cb4-4c76-aace-906a82a6bdcb" width="50%" height="50%">
+<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/b81a2e27-8971-4864-9324-c59c98a57ffc" width="70%" height="70%">
+<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/128102ac-54ea-450b-a08f-330d16b70be1" width="70%" height="70%">
+<img src="https://github.com/MikaZ21/CodingGame/assets/93892096/419e7eee-7cb4-4c76-aace-906a82a6bdcb" width="70%" height="70%">
 
 ### Note:
 * The placeholder text disappear when starts typing, and input text color change to black. If the textarea is left empty or blur (click outside) the textarea, the placeholder will reappear with its gray color.
