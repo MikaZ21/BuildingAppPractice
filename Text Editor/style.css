@@ -1,4 +1,11 @@
-
+#text {
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Break words that are too long to fit */
+    width: 100%; /* Adjust width as needed, for example, to match container */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+    word-wrap: break-word; /* Compatibility with older browsers */
+    padding: 2px;
+}
 
 .bold {
     font-weight: bold;
@@ -8,3 +15,6 @@
     text-decoration: underline;
 }
 
+::placeholder {
+    color: gray;
+}

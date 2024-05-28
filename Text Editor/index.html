@@ -9,9 +9,9 @@
 <body>
     <h1>Text Editor</h1>
     <div>
-    <input id="text" style="height: 100px; width: 250px;"
+    <textarea id="text" style="height: 100px; width: 250px;"
         placeholder="Write your text here">
-    </div>
+    </textarea>
     <div>
         <input type="color" id="colorPicker">
         <span>/</span>
@@ -26,12 +26,27 @@
     </div>
 
     <div>
-        <button onclick="toggleTextSize()"></button>
+        <select id="fontSizeSelector">
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+        </select>
+        <button onclick="setTextSize()">Set Text Size</button>
+    </div>
+
+    <div>
         <button onclick="toggleBold()">Bold</button>
         <button onclick="toggleUnderline()">Underline</button>
-        <button onclick="toggleTextAlign()"></button>
+        <button onclick="alignText('left')">Align Left</button>
+        <button onclick="alignText('center')">Align Center</button>
+        <button onclick="alignText('right')">Align Right</button>
+        <button onclick="alignText('justify')">Justify</button>
         
         <button onclick="removeFormat()">Remove Format</button>
+        <button onclick="resetText()">Reset</button>
     </div>
 
     <script src="script.js"></script>
