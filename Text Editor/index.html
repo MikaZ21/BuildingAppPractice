@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Text Editor</h1>
+    <div>
+    <input id="text" style="height: 100px; width: 250px;"
+        placeholder="Write your text here">
+    </div>
+    <div>
+        <input type="color" id="colorPicker">
+        <span>/</span>
+        <input type="colorText" id="colorText" placeholder="Pick or enter color">
+        <button onclick="setColor()">Set Text Color</button>
+    </div>
+    <div>
+        <input type="color" id="bgColorPicker">
+        <span>/</span>
+        <input type="bgColorText" id="bgColorText" placeholder="Pick or enter color">
+        <button onclick="setBgColor()">Set Background Color</button>
+    </div>
+
+    <div>
+        <button onclick="toggleTextSize()"></button>
+        <button onclick="toggleBold()">Bold</button>
+        <button onclick="toggleUnderline()">Underline</button>
+        <button onclick="toggleTextAlign()"></button>
+        
+        <button onclick="removeFormat()">Remove Format</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
