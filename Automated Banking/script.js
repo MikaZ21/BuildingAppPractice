@@ -1,44 +1,75 @@
 let accountBalance = 6500;
 
-const deposit = (amount, pinCheck) => {
-  if (pinCheck) {
-    console.log("Depositing: $" + amount);
-    accountBalance += amount; 
-    return true;
-  } else {
-    return false;
-  }
-  };
+const depositBtn = document.getElementById('deposit-btn');
+const withdrawBtn = document.getElementById('withdraw-btn');
+const amountInput = document.getElementById('amount');
+const pinInput = document.getElementById('pin');
+const currentBalance = document.getElementById('balance-amount');
+const errorMessage = document.querySelector('.err-msg');
 
-const withdraw = (amount, pinCheck) => {
-  if (pinCheck && checkMinBalance(amount)) {
-    console.log("Withdrawing: $" + amount);
-    accountBalance -= amount;
-    return true;
-  } else {
-    return false;
-  }
+const deposit = () => {
+    const amount = parseFloat(amountInput.value);
+    const pin = pinInput.value;
+
+    if (pin === '1234' && amount > 0) {
+      accountBalance += amount;
+      updateBalance();
+      // amountとpinの値をリセットする。
+      amountInput.value = '';
+      pinInput.value = '';
+    } else {
+      showError("Transaction failed: Incorrect PIN or invalid amount.");
+    }
+};
+  
+const withdraw = () => {
+    const amount = parseFloat(amountInput.value);
+    const pin = pinInput.value;
+
+    console.log('Amount:', amount);
+    console.log('PIN:', pin);
+    console.log('Current Balance before withdrawal:', accountBalance);
+
+    if (pin === '1234' && amount > 0 && amount <= accountBalance) {
+      accountBalance -= amount;
+      updateBalance();
+      amountInput.value = '';
+      pinInput.value = '';
+
+      console.log('New Balance after withdrawal:', accountBalance); // Log the updated balance
+    } else if (pin !== '1234') {
+        showError("Transaction failed: Incorrect PIN.");
+    } else if (amount > accountBalance) {
+        showError("Transaction failed: Insufficient balance.");
+    } else {
+        showError("Transaction failed: Invalid amount.");
+    }
+  };
+  
+const updateBalance = () => {
+    currentBalance.textContent = `$${accountBalance.toFixed(2)}`;
+}
+
+const showError = (message) => {
+    errorMessage.textContent = message;
+    setTimeout(() => {
+        errorMessage.textContent = '';
+    }, 3000);
 };
 
-const pin = (inputPin) => inputPin === 1568;
-const checkMinBalance = (withdrawalAmt) => withdrawalAmt < accountBalance;
+depositBtn.addEventListener('click', deposit);
+withdrawBtn.addEventListener('click', withdraw);
 
-const balance = () =>  "Your balance is currently: $" + accountBalance;
+const greeting = (name) => `Welcome, ${name}!`;
+// Get the HTML element where to display the greeting
+const greetingElement = document.getElementById('greeting');
+// A variable containing the user's name
+const userName = "Jennifer";
+// Update the greeting element's content
+greetingElement.textContent = greeting(userName);
 
-const greeting = (name) => "Welcome to your automated banking portal, " + name + ".";
+// Initialize the balance when the page loads
+updateBalance();
 
 
-console.log(greeting("Jane"));
-console.log(balance());
-
-if (deposit(50, pin(1568))) {
-  console.log(balance());
-}
-if (withdraw(1200, pin(1568))) {
-  console.log(balance());
-}
-if (withdraw(6600, pin(1568))) {
-  console.log(balance());
-} else {
-  console.log("Transaction failed: Insufficient balance or incorrect PIN.");
-}
+console.log('Script loaded');
