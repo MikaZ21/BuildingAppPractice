@@ -29,10 +29,15 @@ const addToTransactionHistory = (type, amount) => {
 
     const transactionHistoryDate = document.createElement('span');
     transactionHistoryDate.textContent = `${dateStr}, ${timeStr}`;
+
+    if (transactionList.firstChild) {
+        transactionList.insertBefore(transactionItem, transactionList.firstChild);
+    } else {
+        transactionList.appendChild(transactionItem);
+    }
     
     transactionItem.appendChild(transactionHistoryText);
     transactionItem.appendChild(transactionHistoryDate);
-    transactionList.appendChild(transactionItem);
 };
 
 const deposit = () => {

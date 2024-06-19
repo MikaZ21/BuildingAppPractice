@@ -6,22 +6,25 @@ body, h1, h2, h3, p, form, input, button, ul {
 }
   
   .container {
-    max-width: 800px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
   header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
   }
 
   .bankLogoImg {
     width: 50px;
     height: 50px;
-    margin-top: 1rem;
+    margin-bottom: .5rem;
   }
 
   .user-name {
@@ -29,13 +32,12 @@ body, h1, h2, h3, p, form, input, button, ul {
   }
 
   .greeting {
-    margin: 20px 0;
-    padding:20px 10px;
+    margin: 15px 0;
+    padding: 15px 10px;
 }
 
-  /* Section styles */
   section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -43,9 +45,9 @@ body, h1, h2, h3, p, form, input, button, ul {
   
   .balance {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
   }
 
@@ -54,7 +56,7 @@ body, h1, h2, h3, p, form, input, button, ul {
 }
   
 .balance .balance-amount {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #333;
 }
@@ -65,8 +67,8 @@ body, h1, h2, h3, p, form, input, button, ul {
   }
   
   .form-group {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    width: 100%;
   }
 
   .form-group-full {
@@ -80,30 +82,31 @@ body, h1, h2, h3, p, form, input, button, ul {
   }
   
   .form-group input {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;  }
+}
   
   .form-group button {
-    padding: 5px 10px;
-  }
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px; 
+ }
 
   .transaction {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
-    margin-bottom: 20px;
-    height: 170px;
+    margin-bottom: 15px;
+    height: auto; 
 }
 
 .transaction h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .form-group label {
@@ -121,11 +124,17 @@ body, h1, h2, h3, p, form, input, button, ul {
     outline-color: #1a7e1f;
 }
 
+.form-group button {
+    width: 100%;
+    padding: 15px; /* モバイル用のボタンのサイズ */
+    margin-top: 10px;
+}
+
 button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 20px 30px;
+    padding: 20px 30px 0 30px;
     font-size: 1em;
     border-radius: 4px;
     cursor: pointer;
@@ -141,7 +150,6 @@ button:hover {
 .err-msg {
     color: red;
     font-weight: bold;
-    margin-top: 10px;
     display: block;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -149,8 +157,12 @@ button:hover {
 
 .error-container {
     height: 1em; /* エラーメッセージの領域を常に確保 */
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.input-error {
+    background-color: rgb(255, 236, 236);
 }
 
 .transaction-history {
@@ -174,9 +186,9 @@ button:hover {
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .transaction-history li span {
