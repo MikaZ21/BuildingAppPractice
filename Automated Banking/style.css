@@ -256,4 +256,8 @@ footer {
         display: flex;
         justify-content: flex-start;
     }
+
+    footer {
+        padding: 30px;
+    }
 }
