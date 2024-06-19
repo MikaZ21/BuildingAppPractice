@@ -198,11 +198,31 @@ button:hover {
   footer {
     background-color: #333;
     color: #fff;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
+
+    .container {
+        max-width: 1000px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 30px; 
+        font-size: 1.5em; 
+    }
+
+    .balance {
+        padding: 30px; 
+        font-size: 1.2em; 
+    }
+
+    .transaction-history {
+        padding: 30px; 
+    }
+
     .form-group {
         display: flex;
         align-items: center;
@@ -220,18 +240,19 @@ button:hover {
 
     .form-group input {
         flex: 2;
+        padding: 15px; 
+        font-size: 1.1em;
+        margin-right: 10px;
     }
 
     .form-group button {
         margin-top: 0;
+        padding: 15px 30px; 
+        font-size: 1.1em; 
     }
 
     .transaction-buttons {
         display: flex;
         justify-content: flex-start;
-    }
-
-    .input-error {
-        background-color: rgb(255, 236, 236);
     }
 }
