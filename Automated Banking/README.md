@@ -19,11 +19,11 @@
 
 ### Screenshot
 
-![Desktop-Screen](https://github.com/MikaZ21/CodingGame/assets/93892096/9626a451-2b0b-4757-a9db-47a89e3e3b03)*Desktop-Screen*
-
 ## 🔹 User Greeting:
 * Greets the user by their name upon loading the page.
 * Customizable welcome message.
+
+![Desktop-Screen](https://github.com/MikaZ21/CodingGame/assets/93892096/9626a451-2b0b-4757-a9db-47a89e3e3b03)*Desktop-Screen*
 
 ### What I learned
 
