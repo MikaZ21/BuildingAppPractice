@@ -9,35 +9,13 @@ const currentBalance = document.getElementById('balance-amount');
 const errorMessage = document.querySelector('.err-msg');
 const transactionList = document.getElementById('transaction-list');
 
+const greeting = (name) => `Welcome, <span class="user-name">${name}</span> !`;
+const greetingElement = document.getElementById('greeting');
+const userName = "Jennifer";
+greetingElement.innerHTML = greeting(userName);
+
 const formatCurrency = (amount) => {
     return amount.toLocaleString('en-US', { style: 'currency', currency:'USD' });
-};
-
-const addToTransactionHistory = (type, amount) => {
-    const transactionItem = document.createElement('li');
-    const timestamp = new Date();
-
-    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-    const timeOptions = { hour: 'numeric', minute: 'numeric', hour12: true };
-
-    const dateStr = timestamp.toLocaleDateString('en-US', dateOptions);
-    const timeStr = timestamp.toLocaleTimeString('en-US', timeOptions);
-
-    const transactionHistoryText = document.createElement('span');
-    transactionHistoryText.textContent = `${type === 'Deposit' ? '+' : '-'} ${formatCurrency(amount)}`;
-    transactionHistoryText.style.color = type === 'Deposit' ? 'green' : 'orange';
-
-    const transactionHistoryDate = document.createElement('span');
-    transactionHistoryDate.textContent = `${dateStr}, ${timeStr}`;
-
-    if (transactionList.firstChild) {
-        transactionList.insertBefore(transactionItem, transactionList.firstChild);
-    } else {
-        transactionList.appendChild(transactionItem);
-    }
-    
-    transactionItem.appendChild(transactionHistoryText);
-    transactionItem.appendChild(transactionHistoryDate);
 };
 
 const deposit = () => {
@@ -76,7 +54,34 @@ const withdraw = () => {
   
 const updateBalance = () => {
     currentBalance.textContent = formatCurrency(accountBalance);
-}
+};
+
+const addToTransactionHistory = (type, amount) => {
+    const transactionItem = document.createElement('li');
+    const timestamp = new Date();
+
+    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+    const timeOptions = { hour: 'numeric', minute: 'numeric', hour12: true };
+
+    const dateStr = timestamp.toLocaleDateString('en-US', dateOptions);
+    const timeStr = timestamp.toLocaleTimeString('en-US', timeOptions);
+
+    const transactionHistoryText = document.createElement('span');
+    transactionHistoryText.textContent = `${type === 'Deposit' ? '+' : '-'} ${formatCurrency(amount)}`;
+    transactionHistoryText.style.color = type === 'Deposit' ? 'green' : 'orange';
+
+    const transactionHistoryDate = document.createElement('span');
+    transactionHistoryDate.textContent = `${dateStr}, ${timeStr}`;
+
+    if (transactionList.firstChild) {
+        transactionList.insertBefore(transactionItem, transactionList.firstChild);
+    } else {
+        transactionList.appendChild(transactionItem);
+    }
+    
+    transactionItem.appendChild(transactionHistoryText);
+    transactionItem.appendChild(transactionHistoryDate);
+};
 
 const showError = (message) => {
     clearTimeout(errorTimeout);
@@ -110,12 +115,6 @@ pinInput.addEventListener('input', clearErrorStyles);
 
 depositBtn.addEventListener('click', deposit);
 withdrawBtn.addEventListener('click', withdraw);
-
-const greeting = (name) => `Welcome, <span class="user-name">${name}</span> !`;
-const greetingElement = document.getElementById('greeting');
-const userName = "Jennifer";
-// Update the greeting element's content
-greetingElement.innerHTML = greeting(userName);
 
 // Initialize the balance when the page loads
 updateBalance();

@@ -5,7 +5,7 @@ body, h1, h2, h3, p, form, input, button, ul {
     font-family: 'Arial', sans-serif;
 }
   
-  .container {
+.container {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -13,7 +13,7 @@ body, h1, h2, h3, p, form, input, button, ul {
     box-sizing: border-box;
   }
   
-  header {
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -21,29 +21,29 @@ body, h1, h2, h3, p, form, input, button, ul {
     margin-bottom: 10px;
   }
 
-  .bankLogoImg {
+.bankLogoImg {
     width: 50px;
     height: 50px;
     margin-bottom: .5rem;
   }
 
-  .user-name {
+.user-name {
     color: #4CAF50;
   }
 
-  .greeting {
+.greeting {
     margin: 15px 0;
     padding: 15px 10px;
 }
 
-  section {
+section {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  .balance {
+.balance {
     background-color: #f1f1f1;
     padding: 15px;
     border-radius: 8px;
@@ -51,7 +51,7 @@ body, h1, h2, h3, p, form, input, button, ul {
     text-align: center;
   }
 
-  .balance h3 {
+.balance h3 {
     margin-bottom: 10px;
 }
   
@@ -60,40 +60,35 @@ body, h1, h2, h3, p, form, input, button, ul {
     font-weight: bold;
     color: #333;
 }
-  
-  .transaction form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .form-group {
+    
+.form-group {
     margin-bottom: 15px;
     width: 100%;
-  }
+}
 
-  .form-group-full {
+.form-group-full {
     flex: 1 0 100%;
 }
   
-  .form-group label {
+.form-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
+}
   
-  .form-group input {
+.form-group input {
     width: calc(100% - 20px);
     padding: 10px;
     border-radius: 4px;
 }
   
-  .form-group button {
+.form-group button {
     width: 100%;
     padding: 15px;
     margin-top: 10px; 
  }
 
-  .transaction {
+.transaction {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 8px;
@@ -104,6 +99,12 @@ body, h1, h2, h3, p, form, input, button, ul {
 .transaction h3 {
     margin-bottom: 10px;
 }
+
+.transaction form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 
 .form-group {
     margin-bottom: 10px;
@@ -195,14 +196,14 @@ button:hover {
     margin: 0 10px; 
 }
   
-  footer {
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
 
     .container {
         max-width: 1000px;
