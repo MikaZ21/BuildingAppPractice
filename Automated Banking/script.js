@@ -24,7 +24,8 @@ const addToTransactionHistory = (type, amount) => {
     const timeStr = timestamp.toLocaleTimeString('en-US', timeOptions);
 
     const transactionHistoryText = document.createElement('span');
-    transactionHistoryText.textContent = `${type}: ${formatCurrency(amount)}`;
+    transactionHistoryText.textContent = `${type === 'Deposit' ? '+' : '-'} ${formatCurrency(amount)}`;
+    transactionHistoryText.style.color = type === 'Deposit' ? 'green' : 'orange';
 
     const transactionHistoryDate = document.createElement('span');
     transactionHistoryDate.textContent = `${dateStr}, ${timeStr}`;
