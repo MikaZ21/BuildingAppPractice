@@ -21,6 +21,10 @@
 
 ![Desktop-Screen](https://github.com/MikaZ21/CodingGame/assets/93892096/9626a451-2b0b-4757-a9db-47a89e3e3b03)*Desktop-Screen*
 
+🔹 User Greeting:
+	•	Greets the user by their name upon loading the page.
+	•	Customizable welcome message.
+
 ### What I learned
 
 📍 DOM Manipulation:
@@ -77,19 +81,34 @@ Ensuring the design and functionality worked across different web browsers.
 ---
 <img alt="desktop-Deposit-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/9f6e76d3-7138-4ac4-9176-ce88d6fc825a" width="70%" height="7%">*desktop-Deposit-BankingApp*
 
+🔹 Current Balance Display:
+	•	Shows the user’s current account balance.
+	•	Updates in real-time as transactions are performed.
 ---
 <img alt="desktop-diposit-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/80ab19f6-8a88-4904-b18c-4ba13262c933" width="70%" height="70%">*desktop-diposit-success-BankingApp*
 
+🔹 Transactions:
+	•	Allows the user to deposit or withdraw funds.
+	•	Validates that the amount entered is a positive number.
+	•	Ensures the correct PIN (4-digit) is entered before processing transactions.
 ---
 <img alt="desktop-withdrawal-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/d1eaf4ec-347d-40ae-aae8-f588e45b7b6e" width="70%" height="70%">*desktop-withdrawal-success-BankingApp*
 
 ---
 <img alt="mobile-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/2a2d3c33-d947-4af5-abe1-bc5fb295f22c" width="70%" height="70%">*mobile-BankingApp*
 
+🔹 Responsive Design:
+•	User-friendly on both desktop and mobile devices.
 ---
 <img alt="mobile-transactionHistory-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/2fcc9086-b943-47df-a8c6-15f0db4ce7de" width="50%" height="50%">*mobile-transactionHistory-BankingApp*
 
+🔹 Transaction History:
+	•	Displays a list of all transactions (deposit and withdrawal).
+	•	New transactions appear at the top of the list.
+	•	Includes the date and time of each transaction.
 ---
 <img alt="desktop-Error-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/f4c83329-225a-4274-b45f-cfffb0ae81e3" width="50%" height="50%">*desktop-Error-BankingApp*
+
+---
 
 ## This project reinforced my understanding of core web development concepts and improved my ability to create interactive, user-friendly applications. 💻
