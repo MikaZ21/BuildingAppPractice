@@ -91,7 +91,7 @@ Ensuring the design and functionality worked across different web browsers.
 * Validates that the amount entered is a positive number.
 * Ensures the correct PIN (4-digit) is entered before processing transactions.
 
-<img alt="desktop-diposit-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/80ab19f6-8a88-4904-b18c-4ba13262c933" width="70%" height="70%">*desktop-diposit-success-BankingApp*
+<img alt="desktop-diposit-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/80ab19f6-8a88-4904-b18c-4ba13262c933" width="70%" height="70%">*desktop-deposit-success-BankingApp*
 
 ---
 <img alt="desktop-withdrawal-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/d1eaf4ec-347d-40ae-aae8-f588e45b7b6e" width="70%" height="70%">*desktop-withdrawal-success-BankingApp*
@@ -115,4 +115,4 @@ Ensuring the design and functionality worked across different web browsers.
 
 ---
 
-## ✨ This project reinforced my understanding of core web development concepts and improved my ability to create interactive, user-friendly applications. 💻✨
+## ✨ This project demonstrates my understanding of core web development concepts and improved my ability to create interactive, user-friendly applications. 💻✨
