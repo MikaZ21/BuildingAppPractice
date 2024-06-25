@@ -23,7 +23,7 @@
 * Greets the user by their name upon loading the page.
 * Customizable welcome message.
 
-![Desktop-Screen](https://github.com/MikaZ21/CodingGame/assets/93892096/9626a451-2b0b-4757-a9db-47a89e3e3b03)*Desktop-Screen*
+![Desktop-Screen](https://github.com/MikaZ21/CodingGame/assets/93892096/9626a451-2b0b-4757-a9db-47a89e3e3b03)*Desktop Screen*
 
 ### What I learned
 
@@ -83,7 +83,7 @@ Ensuring the design and functionality worked across different web browsers.
 * Shows the user’s current account balance.
 * Updates in real-time as transactions are performed.
 
-<img alt="desktop-Deposit-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/9f6e76d3-7138-4ac4-9176-ce88d6fc825a" width="70%" height="7%">*desktop-Deposit-BankingApp*
+<img alt="desktop-Deposit-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/9f6e76d3-7138-4ac4-9176-ce88d6fc825a" width="70%" height="7%">*Desktop Screen: Deposit BankingApp*
 
 ---
 ## 🔹 Transactions:
@@ -91,16 +91,16 @@ Ensuring the design and functionality worked across different web browsers.
 * Validates that the amount entered is a positive number.
 * Ensures the correct PIN (4-digit) is entered before processing transactions.
 
-<img alt="desktop-diposit-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/80ab19f6-8a88-4904-b18c-4ba13262c933" width="70%" height="70%">*desktop-deposit-success-BankingApp*
+<img alt="desktop-deposit-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/80ab19f6-8a88-4904-b18c-4ba13262c933" width="70%" height="70%">*Desktop Screen:Deposit Success*
 
 ---
-<img alt="desktop-withdrawal-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/d1eaf4ec-347d-40ae-aae8-f588e45b7b6e" width="70%" height="70%">*desktop-withdrawal-success-BankingApp*
+<img alt="desktop-withdrawal-success-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/d1eaf4ec-347d-40ae-aae8-f588e45b7b6e" width="70%" height="70%">*Desktop Screen: Withdrawal Success*
 
 ---
 ## 🔹 Responsive Design:
 * User-friendly on both desktop and mobile devices.
 
-<img alt="mobile-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/2a2d3c33-d947-4af5-abe1-bc5fb295f22c" width="70%" height="70%">*mobile-BankingApp*
+<img alt="mobile-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/2a2d3c33-d947-4af5-abe1-bc5fb295f22c" width="70%" height="70%">*Mobile Screen: BankingApp*
 
 ---
 ## 🔹 Transaction History:
@@ -108,10 +108,10 @@ Ensuring the design and functionality worked across different web browsers.
 * New transactions appear at the top of the list.
 * Includes the date and time of each transaction.
 
-<img alt="mobile-transactionHistory-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/2fcc9086-b943-47df-a8c6-15f0db4ce7de" width="50%" height="50%">*mobile-transactionHistory-BankingApp*
+<img alt="mobile-transactionHistory-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/2fcc9086-b943-47df-a8c6-15f0db4ce7de" width="50%" height="50%">*Mobile Screen: TransactionHistory BankingApp*
 
 ---
-<img alt="desktop-Error-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/f4c83329-225a-4274-b45f-cfffb0ae81e3" width="50%" height="50%">*desktop-Error-BankingApp*
+<img alt="desktop-Error-BankingApp" src="https://github.com/MikaZ21/CodingGame/assets/93892096/f4c83329-225a-4274-b45f-cfffb0ae81e3" width="50%" height="50%">*Desktop Screen: Error BankingApp*
 
 ---
 
